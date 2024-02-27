@@ -10,7 +10,7 @@ Your app description
 class C(BaseConstants):
     NAME_IN_URL = 'titration'
     PLAYERS_PER_GROUP = None
-    NUM_ROUNDS = 5
+    NUM_ROUNDS = 4
 
     LOTTERY_HIGH = cu(100)
     LOTTERY_LOW = cu(0)
