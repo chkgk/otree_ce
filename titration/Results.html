@@ -1,0 +1,13 @@
+{{ block title }}
+    Thank you
+{{ endblock }}
+
+{{ block content }}
+    <p>
+        The lottery has an expected value of {{ expected_value }}.<br>
+        You value it at approximately {{ player.ce_estimate }}.
+    </p>
+    {{ next_button }}
+{{ endblock }}
+
+

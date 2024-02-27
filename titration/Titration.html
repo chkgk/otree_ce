@@ -1,0 +1,47 @@
+{{ block title }}
+    Decision {{ player.round_number }}
+{{ endblock }}
+
+{{ block styles }}
+<style>
+    div.row {
+        text-align: center;
+    }   
+    .buttons {
+        text-align: center;
+    }
+    p {
+        margin-bottom: 0.25em;
+    }
+</style>
+{{ endblock }}
+
+{{ block content }}
+    <p>Which option do you prefer?</p>
+    <div class="row mb-3">
+        <div class="col-5">
+            <b>Lottery</b>
+            <div class="row">
+                <div class="col-6"><p><em>50%</em></p>{{ C.LOTTERY_LOW }}</div>
+                <div class="col-6"><p><em>50%</em></p>{{ C.LOTTERY_HIGH }}</div>
+            </div>
+        </div>
+        <div class="col-2">
+            <p><b>or</b></p>
+        </div>
+        <div class="col-5">
+            <p><b>Sure amount</b><br>
+            <em>100%</em></p>
+            {{ player.ce_estimate }}
+        </div>
+    </div> 
+    <div class="row mb-3 buttons">
+        <div class="col-6">
+            <button name="choose_sure" value="False" class="btn btn-primary">Lottery</button>
+        </div>
+        <div class="col-6">
+            <button name="choose_sure" value="True" class="btn btn-primary">Sure Amount</button>
+        </div>
+    </div>
+
+{{ endblock }}
