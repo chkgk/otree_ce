@@ -39,6 +39,6 @@ SECRET_KEY = '9532168671802'
 ROOMS = [
     dict(
         name='econ',
-        display_name='Virtual Lab'
+        display_name='Virtual Lab',
     ),
 ]
