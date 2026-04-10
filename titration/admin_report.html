@@ -5,10 +5,8 @@
 <p style="text-align: center;">Expected value: {{ expected_value }} | Mean: {{ mean_ce }} | Median: {{ median_ce }}</p>
 
 
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/modules/histogram-bellcurve.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
-<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script src="{{ static 'highcharts/highcharts.js' }}"></script>
+<!--<script src="https://code.highcharts.com/modules/histogram-bellcurve.js"></script>-->
 
 <script>
 const cat_names = JSON.parse("{{ ce_values }}");
